@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      body {
+        font-size: 20px;
+        font-family: Arial;
+        padding: 0px, 30px 40px 0px;
+        line-height: 1.4;
+      }
+      .container-flex {
+        /* display property */
+        display: flex;
+        /* display: block; */
+
+        /* flex-direction property */
+        flex-direction: row;
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+
+        /* flex-wrap property */
+        flex-wrap: wrap;
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap-reverse; */
+
+        /* align-content property it will not divide the space between as compare to align-item*/
+        /* align-content: baseline; */
+        /* align-content: center; */
+        /* align-content: center; */
+        /* align-content: flex-end; */
+        /* align-content: flex-start; */
+        /* align-content: stretch; */
+        /* align-content: space-around; */
+        /* align-content: space-between; */
+        /* align-content: space-evenly; */
+
+        /* align-item property it will divide the space between items*/
+
+        /* align-items: baseline; */
+        /* align-items: center; */
+        align-items: center;
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+        /* align-items: stretch; */
+        /* align-items: space-around; */
+        /* align-items: space-between; */
+        /* align-items: space-evenly; */
+
+        /* to check the difference between align-items and align-content use mobile view  not webview */
+
+        border: 5px blue solid;
+        width: 100%;
+        height: 500px;
+      }
+      .item-under-flex-container {
+        width: 80px;
+        /* height: 80px; disabled to show stretch property */
+        height: 80px;
+        background-color: blueviolet;
+        border: 2px solid rgb(85, 85, 87);
+        text-align: center;
+        line-height: 1.7;
+      }
+
+      #item1 {
+        /* order property used to change the order of element */
+        /* order: 2; */
+
+        /* flex-basis to control the width */
+        /* flex-basis: 200px; */
+
+        background-color: rgb(235, 215, 191);
+      }
+
+      #item2 {
+        /* flex-grow to increase the div width and make it look relatively larger when screen is expanded*/
+        flex-grow: 3;
+
+        /* Similarly flex-shrink will do the opposite of flex-grow */
+        /* flex-shrink: 2; */
+        background-color: rgb(109, 96, 121);
+      }
+
+      #item3 {
+        flex-grow: 2;
+
+        background-color: rgb(73, 41, 60);
+      }
+
+      #item4 {
+        /* align-self is used to align a specified item */
+        align-self: self-start;
+        background-color: rgb(97, 120, 84);
+      }
+
+      #item5 {
+        background-color: rgb(209, 150, 227);
+      }
+
+      #item6 {
+        /* order property used to change the order of element */
+        /* order: 10; */
+
+        background-color: rgb(235, 215, 191);
+      }
+
+      #item7 {
+        background-color: rgb(109, 96, 121);
+      }
+
+      #item8 {
+        background-color: rgb(73, 41, 60);
+      }
+
+      #item9 {
+        background-color: rgb(97, 120, 84);
+      }
+
+      #item10 {
+        background-color: rgb(209, 150, 227);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-flex">
+      <div class="item-under-flex-container" id="item1">flex-item 1</div>
+      <div class="item-under-flex-container" id="item2">flex-item 2</div>
+      <div class="item-under-flex-container" id="item3">flex-item 3</div>
+      <div class="item-under-flex-container" id="item4">flex-item 4</div>
+      <div class="item-under-flex-container" id="item5">flex-item 5</div>
+
+      <!-- <div class="item-under-flex-container" id="item6">flex-item 6</div>
+      <div class="item-under-flex-container" id="item7">flex-item 7</div>
+      <div class="item-under-flex-container" id="item8">flex-item 8</div>
+      <div class="item-under-flex-container" id="item9">flex-item 9</div>
+      <div class="item-under-flex-container" id="item10">flex-item 10</div> -->
+    </div>
+  </body>
+</html>
